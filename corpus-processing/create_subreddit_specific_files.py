@@ -17,7 +17,7 @@ print "outputting to " + sub_archive_dir
 # CREATE BLOOMFILTER OF BOTS
 bot_names = ['[deleted]', 'AutoModerator', 'autowikibot', 'TweetsInCommentsBot',
              'TweetPoster', 'TotesMessanger', 'PriceZombie',
-            '500pxBot', 'TrollaBot', 'RemindMeBot', 'Mentioned_Videos']
+            '500pxBot', 'TrollaBot', 'RemindMeBot', 'Mentioned_Videos', 'User_History_Bot', 'User_Simulator']
 
 bots = BloomFilter(capacity=len(bot_names), error_rate = 0.0001)
 [bots.add(x) for x in bot_names]
